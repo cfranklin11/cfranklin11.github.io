@@ -1,5 +1,5 @@
-# My Personal Page
+# cfranklin11.github.io
 
-Hosted at cfranklin11.github.io.
+## Theme
 
-Build using the [Gravity theme](https://github.com/hemangsk/Gravity).
+[Phantom](https://github.com/jamigibbs/phantom) for Jekyll
