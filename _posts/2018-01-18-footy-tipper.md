@@ -5,7 +5,7 @@ title: 'Footy Tipper'
 date: 2018-01-18
 categories: data machine-learning development
 tags: Python Scikit-Learn Machine-Learning Docker
-featured_image:
+featured_image: 'img/posts/footy-tipper.png'
 project_link: 'https://github.com/cfranklin11/footy-tipper'
 button_icon: 'github'
 button_text: 'Visit Project'
