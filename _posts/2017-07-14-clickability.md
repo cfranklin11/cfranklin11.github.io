@@ -5,7 +5,7 @@ title: 'Clickability: Feedback Request Service'
 date: 2017-07-14
 categories: development
 tags: Ruby Rails React Javascript
-featured_image: 'img/posts/clickability.png'
+featured_image:
 project_link: 'https://github.com/clickability/clickability'
 button_icon: 'github'
 button_text: 'Visit Project'
