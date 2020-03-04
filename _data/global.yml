@@ -5,7 +5,8 @@ url: '' # the base hostname & protocol for your site
 nav: "false"
 twitter: 'englishcraig'
 github: 'cfranklin11'
-medium: 'medium.com/@craigjfranklin'
+dev: 'englishcraig'
+medium: 'craigjfranklin'
 
 # Admin Settings
 admin_name: 'Craig Franklin'
