@@ -6,9 +6,13 @@ date: 2016-03-28
 categories: data development
 tags: Backbone Javascript Node Express
 featured_image: 'img/posts/budget-pie.png'
-project_link: 'https://github.com/cfranklin11/budget-pie'
-button_icon: 'github'
-button_text: 'Visit Project'
+project_links:
+  - project_link: 'https://github.com/cfranklin11/budget-pie'
+    button_icon: 'github'
+    button_text: 'Visit Project'
+  - project_link: 'https://budgetpie.herokuapp.com'
+    button_icon: 'cog'
+    button_text: 'Visit Site'
 lead_text:
 ---
 

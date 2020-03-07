@@ -6,9 +6,13 @@ date: 2016-01-17
 categories: analytics data development
 tags: React Javascript Node Express
 featured_image: 'img/posts/mcfly-trends.png'
-project_link: 'https://github.com/cfranklin11/mcfly-trends'
-button_icon: 'github'
-button_text: 'Visit Project'
+project_links:
+  - project_link: 'https://github.com/cfranklin11/mcfly-trends'
+    button_icon: 'github'
+    button_text: 'Visit Project'
+  - project_link: 'https://mcflytrends.herokuapp.com'
+    button_icon: 'cog'
+    button_text: 'Visit Site'
 lead_text:
 ---
 
