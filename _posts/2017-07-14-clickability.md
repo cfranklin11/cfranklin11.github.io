@@ -6,9 +6,10 @@ date: 2017-07-14
 categories: development
 tags: Ruby Rails React Javascript
 featured_image:
-project_link: 'https://github.com/clickability/clickability'
-button_icon: 'github'
-button_text: 'Visit Project'
+project_links:
+  - project_link: 'https://github.com/clickability/clickability'
+    button_icon: 'github'
+    button_text: 'Visit Project'
 lead_text:
 ---
 

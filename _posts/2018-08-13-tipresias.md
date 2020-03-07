@@ -6,9 +6,13 @@ date: 2018-08-13
 categories: data machine-learning development
 tags: Python Scikit-Learn Machine-Learning Docker
 featured_image: 'img/posts/tipresias.png'
-project_link: 'https://github.com/tipresias/tipresias'
-button_icon: 'github'
-button_text: 'Visit Project'
+project_links:
+  - project_link: 'https://github.com/tipresias/tipresias'
+    button_icon: 'github'
+    button_text: 'Visit Repo'
+  - project_link: 'http://www.tipresias.net'
+    button_icon: 'cog'
+    button_text: 'Visit Site'
 lead_text:
 ---
 
