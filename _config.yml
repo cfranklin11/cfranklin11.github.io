@@ -23,7 +23,7 @@ unpublished: false
 
 # Plugins
 whitelist: []
-plugins:      [jekyll-paginate]
+plugins:      [jekyll-paginate, jekyll-remote-theme]
 
 # Conversion
 markdown:    kramdown
@@ -63,3 +63,5 @@ kramdown:
   enable_coderay: false
 
 include: ['_pages']
+
+remote_theme: daviddarnes/alembic
