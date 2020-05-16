@@ -1,5 +1,5 @@
 ---
-layout: inner
+layout: post
 position: right
 title: 'McFly Trends'
 date: 2016-01-17

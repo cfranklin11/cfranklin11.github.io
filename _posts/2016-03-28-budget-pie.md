@@ -1,5 +1,5 @@
 ---
-layout: inner
+layout: post
 position: left
 title: 'Budget Pie'
 date: 2016-03-28

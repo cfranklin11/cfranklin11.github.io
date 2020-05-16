@@ -1,5 +1,5 @@
 ---
-layout: inner
+layout: post
 position: right
 title: 'Clickability: Feedback Request Service'
 date: 2017-07-14

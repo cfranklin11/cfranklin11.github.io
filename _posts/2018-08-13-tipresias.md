@@ -1,5 +1,5 @@
 ---
-layout: inner
+layout: post
 position: right
 title: 'Tipresias'
 date: 2018-08-13

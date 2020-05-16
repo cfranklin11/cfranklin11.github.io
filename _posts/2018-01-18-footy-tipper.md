@@ -1,5 +1,5 @@
 ---
-layout: inner
+layout: post
 position: left
 title: 'Footy Tipper'
 date: 2018-01-18
