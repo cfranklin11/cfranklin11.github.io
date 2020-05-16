@@ -1,10 +1,14 @@
 ---
-layout: post
-position: right
 title: 'Tipresias'
-date: 2018-08-13
-categories: data machine-learning development
-tags: Python Scikit-Learn Machine-Learning Docker
+excerpt: "From what I had learned the first time around, I was able to write cleaner application code and create a roughly-equivalent model that was much simpler and faster to train. The current iteration is a stacked ensemble with an XGBoost regressor, ELO model, and ARIMA model all feeding into an Extremely-Randomized Trees meta-estimator."
+categories:
+  - python
+  - machinelearning
+  - docker
+  - react
+  - javascript
+  - graphql
+  - serverless
 featured_image: 'img/posts/tipresias.png'
 project_links:
   - project_link: 'https://github.com/tipresias/tipresias'
@@ -13,8 +17,6 @@ project_links:
   - project_link: 'http://www.tipresias.net'
     button_icon: 'cog'
     button_text: 'Visit Site'
-lead_text:
-published: false
 ---
 
 The successor to Footy Tipper. I decided to start over from scratch, because:
