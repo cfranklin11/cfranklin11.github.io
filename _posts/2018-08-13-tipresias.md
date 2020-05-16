@@ -14,6 +14,7 @@ project_links:
     button_icon: 'cog'
     button_text: 'Visit Site'
 lead_text:
+published: false
 ---
 
 The successor to Footy Tipper. I decided to start over from scratch, because:
