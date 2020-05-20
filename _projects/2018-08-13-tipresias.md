@@ -1,23 +1,10 @@
 ---
+layout: post
 title: 'Tipresias'
-excerpt: "From what I had learned the first time around, I was able to write cleaner application code and create a roughly-equivalent model that was much simpler and faster to train. The current iteration is a stacked ensemble with an XGBoost regressor, ELO model, and ARIMA model all feeding into an Extremely-Randomized Trees meta-estimator."
-categories:
-  - python
-  - machinelearning
-  - docker
-  - react
-  - javascript
-  - graphql
-  - serverless
-featured_image: 'img/posts/tipresias.png'
-project_links:
-  - project_link: 'https://github.com/tipresias/tipresias'
-    button_icon: 'github'
-    button_text: 'Visit Repo'
-  - project_link: 'http://www.tipresias.net'
-    button_icon: 'cog'
-    button_text: 'Visit Site'
+excerpt: "A machine-learning application for predicting AFL match results (i.e. 'footy tipping'), this project is composed of the following services: Django web application serving data to a React frontend via a GraphQL API, Kedro data-science project (Python & Jupyter notebooks) that runs in serverless functions, R application for fetching data."
 ---
+
+{% include button.html color="#24292e" icon="github" text="tipresias" link="https://github.com/tipresias" %}{% include button.html text="tipresias.net" link="http://www.tipresias.net" %}
 
 The successor to Footy Tipper. I decided to start over from scratch, because:
 1. I needed a better name.
