@@ -21,7 +21,7 @@ Kaggle competitions are great, but what do you do when you have a cool idea for 
 
 ### Version given at PyConJP 2020
 
-<iframe width="750" height="562.5" src="http://www.youtube.com/embed/yGHEcgraabI" frameborder="0" allowfullscreen></iframe>
+<iframe width="750" height="562.5" src="https://www.youtube.com/embed/yGHEcgraabI" frameborder="0" allowfullscreen></iframe>
 
 <div>
   <iframe class="speakerdeck-iframe" frameborder="0" src="//speakerdeck.com/player/8a295e219ab3463fb44839c6c4168c9c?title=false&skipResize=true" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" style="border: 0px; background: padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 750px; height: 843px;"></iframe>
