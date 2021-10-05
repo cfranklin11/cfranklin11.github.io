@@ -1,8 +1,8 @@
 ---
 title: A Review of "Professor Fisby's Mostly Adequate Guide to Functional Programming"
-description: "\"Professor Fisby's Mostly Adequate Guide to Functional Programming\" by Brian Lonsdorf is a popular introduction to FP with code examples writting in JavaScript. From the perspective of one who has mostly worked in OOP, here is my review of the book along with some thoughts on FP in general."
+description: "\"Professor Fisby's Mostly Adequate Guide to Functional Programming\" by Brian Lonsdorf is a popular introduction to FP with code examples written in JavaScript. From the perspective of one who has mostly worked in OOP, here is my review of the book along with some thoughts on FP in general."
 tags: #functional, #books, #javascript
-excerpt: "\"Professor Fisby's Mostly Adequate Guide to Functional Programming\" by Brian Lonsdorf is a popular introduction to FP with code examples writting in JavaScript. From the perspective of one who has mostly worked in OOP, here is my review of the book along with some thoughts on FP in general."
+excerpt: "\"Professor Fisby's Mostly Adequate Guide to Functional Programming\" by Brian Lonsdorf is a popular introduction to FP with code examples written in JavaScript. From the perspective of one who has mostly worked in OOP, here is my review of the book along with some thoughts on FP in general."
 categories:
   - javascript
   - books
