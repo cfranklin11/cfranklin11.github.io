@@ -1,0 +1,19 @@
+---
+import Layout from "../../layouts/Layout.astro";
+
+const posts = await Astro.glob("./*.md");
+---
+
+<Layout title="Blog">
+  <h1>Blog</h1>
+  <ul>
+    {
+      posts.reverse().map((post) => (
+        <li>
+          <a href={post.url}>{post.frontmatter.title}</a>
+          <p>{post.frontmatter.excerpt || post.frontmatter.description}</p>
+        </li>
+      ))
+    }
+  </ul>
+</Layout>
