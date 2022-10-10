@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Post.astro
 title: Creating an app with Docker Compose, Django, and Create React App
 published: true
 description: How to containerize independent front-end and back-end services while still getting them to play nice with each other.
@@ -199,7 +200,7 @@ function handleSubmit(event) {
         "#char-count"
       ).textContent = `${data.count} characters!`;
     })
-    .catch(err => console.log(err));
+    .catch((err) => console.log(err));
 }
 
 function App() {

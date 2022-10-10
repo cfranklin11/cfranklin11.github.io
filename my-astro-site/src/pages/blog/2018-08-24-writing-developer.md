@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Post.astro
 title: Writing like a Developer
 excerpt: "Having spent a fair bit of time both writing and coding, I’ve noticed that these two seemingly disparate crafts have a lot in common. They share some vocabulary: we *read* and *write* code; a coding *language* has a particular *syntax*; Python even has *dictionaries*. More importantly, however, both disciplines have best practices, communal knowledge gained over years that we must learn in order to consider ourselves skilled practitioners. These best practices have the common objective of more-effectively communicating one’s ideas to other people"
 published: true
@@ -9,9 +10,9 @@ categories:
 
 Prose and code aren’t so different after all
 
-![“A hand taking a clear shot of hanging lights with the camera of a smartphone” by [Dustin Lee](https://unsplash.com/@dustinlee?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/8000/0*eAb05VbkEMFdwDql)*“A hand taking a clear shot of hanging lights with the camera of a smartphone” by [Dustin Lee](https://unsplash.com/@dustinlee?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)*
+![“A hand taking a clear shot of hanging lights with the camera of a smartphone” by [Dustin Lee](https://unsplash.com/@dustinlee?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/8000/0*eAb05VbkEMFdwDql)_“A hand taking a clear shot of hanging lights with the camera of a smartphone” by [Dustin Lee](https://unsplash.com/@dustinlee?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)_
 
-Having spent a fair bit of time both writing and coding, I’ve noticed that these two seemingly disparate crafts have a lot in common. They share some vocabulary: we *read* and *write* code; a coding *language* has a particular *syntax*; Python even has *dictionaries*. More importantly, however, both disciplines have best practices, communal knowledge gained over years that we must learn in order to consider ourselves skilled practitioners. These best practices have the common objective of more-effectively communicating one’s ideas to other people. So, before you write your next blog post, try approaching your prose with the same principles that you apply to your code, and the result will be clearer, more-persuasive writing.
+Having spent a fair bit of time both writing and coding, I’ve noticed that these two seemingly disparate crafts have a lot in common. They share some vocabulary: we _read_ and _write_ code; a coding _language_ has a particular _syntax_; Python even has _dictionaries_. More importantly, however, both disciplines have best practices, communal knowledge gained over years that we must learn in order to consider ourselves skilled practitioners. These best practices have the common objective of more-effectively communicating one’s ideas to other people. So, before you write your next blog post, try approaching your prose with the same principles that you apply to your code, and the result will be clearer, more-persuasive writing.
 
 ## **Single Responsibility Principle**
 
@@ -31,7 +32,7 @@ Scope creep, the larding of new, non-essential requirements onto a feature branc
 
 When writing, especially as an amateur, you’re unlikely to be assigned specific topics revealed unto thee from on high. You write whatever the hell you want, and anyone is free to read it or ignore it. Therefore, you’ll want to think hard about who your intended audience is, and what you want to communicate to them: these are your requirements. A blog post should have a more-casual tone than an academic article, for example. Otherwise, you’ll come off as stilted and overly dry to the general public (unless your intended audience are academics). Also, you’ll have to be conscious of your use of technical language, especially esoteric jargon that a general audience is unlikely to understand. People might be willing to look up the meaning of an acronym or two, but if a post is littered with them, the readers will eventually give up.
 
-![Photo by [Priscilla Du Preez](https://unsplash.com/@priscilladupreez?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/10944/0*vFeIF14wRcjZ_Pzb)*Photo by [Priscilla Du Preez](https://unsplash.com/@priscilladupreez?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)*
+![Photo by [Priscilla Du Preez](https://unsplash.com/@priscilladupreez?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/10944/0*vFeIF14wRcjZ_Pzb)_Photo by [Priscilla Du Preez](https://unsplash.com/@priscilladupreez?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)_
 
 ## **Linting, testing, code reviews**
 

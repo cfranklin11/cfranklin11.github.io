@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Post.astro
 title: "Footy Tipping with Machine Learning: Adding Player Data"
 published: true
 categories:
@@ -9,9 +10,9 @@ categories:
 
 How I stopped worrying and learned to fetch, aggregate, and reshape AFL player data.
 
-![Photo by [Scott Webb](https://unsplash.com/@scottwebb?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/8520/0*qrS1WlYJw-8yNkEP)*Photo by [Scott Webb](https://unsplash.com/@scottwebb?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)*
+![Photo by [Scott Webb](https://unsplash.com/@scottwebb?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)](https://cdn-images-1.medium.com/max/8520/0*qrS1WlYJw-8yNkEP)_Photo by [Scott Webb](https://unsplash.com/@scottwebb?utm_source=medium&utm_medium=referral) on [Unsplash](https://unsplash.com?utm_source=medium&utm_medium=referral)_
 
-*Jupyter notebooks used for this post can be found [here](https://github.com/cfranklin11/tipresias/tree/master/notebooks).*
+_Jupyter notebooks used for this post can be found [here](https://github.com/cfranklin11/tipresias/tree/master/notebooks)._
 
 When I started this project, one of my main goals was to incorporate player data into my footy-tipping model. [Footy Tipper](https://github.com/cfranklin11/footy-tipper), my model for last season, incorporated betting and team-match data into an ensemble, but I couldn’t quite figure out how to include player-based features in a way that enhanced performance. I tried sorting player lists alphabetically, treating player names like categorical variables, then adding embedding layers to my neural net, but that just added noise and actually lowered accuracy slightly. I didn’t have much time to experiment, as the AFL season was quickly approaching, so I dropped the idea of using player lists for the time being, vowing to return with more men, horses, and steel. With the advent of [Tipresias](https://github.com/cfranklin11/tipresias), I’m making another assault on the barricades with a few new weapons at my side.
 

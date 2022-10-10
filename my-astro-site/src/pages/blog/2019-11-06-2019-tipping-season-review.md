@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Post.astro
 title: "Footy Tipping with Machine Learning: 2019 Season Review"
 published: true
 description: The good, the bad, and the buggy from predicting AFL match results with a machine-learning model.
@@ -40,9 +41,7 @@ Okay, at least this one is unequivocal: I nailed it. If you can't appreciate the
 
 Despite the various improvements in my processes and code, the results were not exactly worthy of deification. In my office competition, which is what really matters, I finished 4th with 132 tips (i.e. correct predictions) at the end of the regular season, well behind the winner, who got 137. By the end of the season, after the confetti had been swept from Punt Road, I had 137 tips (66.18% accuracy), well behind the betting odds, which had favoured the eventual winner 140 times (67.63% accuracy). My mean absolute error (MAE) (i.e. how far off I was in predicting the winning margin) was also a bit higher at 26.77 vs 26.25 for the betting odds. This was a harder-than-average season for predicting winners, as odds-on favourites tend to win roughly 72% of the time (over the last 10 years), and the top model on [Squiggle AFL](squiggle.com.au) got 139, whereas last year's winner got 147. It's possible that Tipresias 1.0 is particularly weak in an upset-heavy season, but it's more likely that I would have gotten subpar performance regardless of the contours of the schedule and teams' consistency. In the analysis below I'll use betting odds as a benchmark, because it's a simple, publicly-available heuristic for predicting winners that performs as well as the top, publicly-available statistical models. If I can't beat the betting odds, then I'm at a disadvantage to every Joe and Flo Schmo who has the humility to just pick the favourite from beginning to end.
 
-
 ![Line chart for rolling mean accuracy of models with 3-round window](https://thepracticaldev.s3.amazonaws.com/i/il5eu0l28bajwdpfgjka.png)
-
 
 This comparison of the rolling accuracy of the betting odds and Tipresias shows that both performed poorly in the early seasons, which is typical, as teams change rosters and sometimes coaches in the offseason, and it can be difficult to predict which changed for the better and which for the worse. It is also clear that Tipresias was consistently below the betting odds throughout the season, save for a single round near mid-season, and a few late in the year, which is entirely due to a particularly atrocious round 22, which had a lot of coin-flip matches of which the oddsmakers only picked three of nine and Tipresias picked seven.
 
@@ -50,9 +49,7 @@ Even with the anomaly of round 22, and the sudden dip in the late-teen rounds, t
 
 Tipresias's overall performance relative to the betting odds is demonstrated even more clearly in their cumulative accuracies shown below.
 
-
 ![Line chart for cumulative accuracy of models](https://thepracticaldev.s3.amazonaws.com/i/bfbgl4ebmuexzw5jv2gw.png)
-
 
 Although the rolling accuracy, with a short window, shows Tipresias having a good few rounds and passing the betting odds as a result, its overall accuracy was not higher at any point during the season. Although the model's performance needs to improve in general, one area that I will be focusing on this offseason will be trying to increase accuracy in the early rounds, as there is much more room for improvement during that part of the season than later on when most heuristics and models are consistently tipping 70% - 80%. Squeezing an extra 5% - 10% accuracy out of a model that's already getting most matches right becomes increasingly difficult, and I think there are still some easier gains to be made elsewhere.
 
@@ -68,9 +65,7 @@ Since creating Tipresias, I've read Google's [Rules of ML](https://developers.go
 
 I was surprised by the presence of `'Regular'` and `'Finals'` (i.e. whether a match was in the regular season or finals) toward the top of the feature-importance list. As I mentioned above, I want to look more closely at how predictions change during different phases of the season and if there are any tendencies that hold from year to year. The importance of these round-type features further suggests that this could be a fruitful area of investigation.
 
-
 ![Line chart of top features with average gain per round](https://thepracticaldev.s3.amazonaws.com/i/ez68muscsrqovo06ybl7.png)
-
 
 Aggregating prediction explanations by feature and round didn't prove to be particularly illuminating. We see that there isn't much movement for most of the top features save for a slight downward trend for some of the Elo-based features and a sizeable jump in the importance of round-type features with the start of finals. Again, this requires further digging, but I suspect that the model may be under-fitting the changes in context during different phases of the AFL season, optimising for the high-accuracy middle rounds and suffering poor performance early and late in the season as a result.
 

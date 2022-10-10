@@ -1,5 +1,6 @@
 ---
-title: 'Tipresias'
+layout: ../../layouts/Project.astro
+title: "Tipresias"
 excerpt: "A machine-learning application for predicting AFL match results (i.e. 'footy tipping'), this project is composed of the following services: Django web application serving data to a React frontend via a GraphQL API, Kedro data-science project (Python & Jupyter notebooks) that runs in serverless functions, R application for fetching data."
 ---
 
@@ -8,6 +9,7 @@ excerpt: "A machine-learning application for predicting AFL match results (i.e. 
 [Website](http://www.tipresias.net)
 
 The successor to Footy Tipper. I decided to start over from scratch, because:
+
 1. I needed a better name.
 2. Footy Tipper was more than a little refactoring away from being maintainable or extendible.
 

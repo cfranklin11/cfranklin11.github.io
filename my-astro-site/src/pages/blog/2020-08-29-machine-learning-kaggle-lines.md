@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Post.astro
 title: "Machine Learning Outside the Kaggle Lines"
 published: true
 description: Slides from my talk for PyCon JP 2020
@@ -10,7 +11,6 @@ categories:
 ---
 
 Kaggle competitions are great, but what do you do when you have a cool idea for your own machine-learning project? Learn about all the dirty data, bugs of others, and keeping it all running, when building from zero to production. Hear about the mistakes that I've made so you can avoid them yourself.
-
 
 ### Version given at PyConPL 2020
 

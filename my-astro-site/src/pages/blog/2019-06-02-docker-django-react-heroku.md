@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Post.astro
 title: "Docker, Django, React: Building Assets and Deploying to Heroku"
 published: true
 description: "Second part in a series on working with Docker, Django, & React: now deployed to Heroku, with WhiteNoise serving assets."

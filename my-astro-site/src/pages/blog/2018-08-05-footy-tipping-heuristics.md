@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Post.astro
 title: "Toward a Better Footy Tipping Model: An Analysis of Basic Heuristics"
 published: true
 excerpt: "Footy tipping is the popular Australian past-time of picking which Australian Rules Football (AFL) teams will win their matches every week (like filling out a March Madness bracket, except it’s done a round at a time, and the umpires make their fingers into pistols when a team scores). Each tipper gets a point for correctly picking the winner and a point in the case of a draw. At the end of the season, the winner is the one with the most points, with predicting the margin of the first match of each round serving as a tie-breaker."
@@ -8,9 +9,9 @@ categories:
   - sportsball
 ---
 
-*The data and code used for this post is in the Footy Tipper GitHub repo (in the experiments folder). All data is from AFL matches from 2010 to 2017.*
+_The data and code used for this post is in the Footy Tipper GitHub repo (in the experiments folder). All data is from AFL matches from 2010 to 2017._
 
-![Photo by [Charles Van den Broek](https://www.flickr.com/photos/charlot17/) on [Flickr](https://www.flickr.com/)](https://cdn-images-1.medium.com/max/4704/1*gwL2yPELD0SFhldgy4V0Mg.jpeg)*Photo by [Charles Van den Broek](https://www.flickr.com/photos/charlot17/) on [Flickr](https://www.flickr.com/)*
+![Photo by [Charles Van den Broek](https://www.flickr.com/photos/charlot17/) on [Flickr](https://www.flickr.com/)](https://cdn-images-1.medium.com/max/4704/1*gwL2yPELD0SFhldgy4V0Mg.jpeg)_Photo by [Charles Van den Broek](https://www.flickr.com/photos/charlot17/) on [Flickr](https://www.flickr.com/)_
 
 Footy tipping is the popular Australian past-time of picking which Australian Rules Football (AFL) teams will win their matches every week (like filling out a March Madness bracket, except it’s done a round at a time, and the umpires make their fingers into pistols when a team scores). Each tipper gets a point for correctly picking the winner and a point in the case of a draw. At the end of the season, the winner is the one with the most points, with predicting the margin of the first match of each round serving as a tie-breaker.
 
@@ -44,11 +45,11 @@ Accuracy when always tipping the odds-on favourite: 72.32%
 
 As shown in the average accuracies above, a heuristic’s reliability increases with the number of data inputs that its source takes into account.
 
-* Calculating the home team just needs one datum: which team is at home.
+- Calculating the home team just needs one datum: which team is at home.
 
-* Calculating the higher-ranked team requires somewhat more: both teams’ cumulative wins, draws, scores, and opponents’ scores for the season.
+- Calculating the higher-ranked team requires somewhat more: both teams’ cumulative wins, draws, scores, and opponents’ scores for the season.
 
-* Finally, creating the odds for each match potentially takes into account all of the above plus each team’s recent win percentage, their in-game stats, their players’ individual stats, if any players are injured, head-to-head history for each matchup, and so on.
+- Finally, creating the odds for each match potentially takes into account all of the above plus each team’s recent win percentage, their in-game stats, their players’ individual stats, if any players are injured, head-to-head history for each matchup, and so on.
 
 Since tipping the odds-on favourite is the most accurate heuristic by over 4%, I’ll use this as the benchmark against which I’ll measure the performance of the machine-learning model that I will develop later. Therefore, I’ll focus further analysis on examining the biases built into betting odds, with the goal of using this information to help my model identify when to contradict the odds, hopefully achieving greater accuracy as a result.
 
@@ -94,7 +95,7 @@ It seems that the stronger the real effect is (home-field advantage, home-field 
 
 The AFL is closer to American sports leagues than European soccer leagues in how it is organised: There is a draft between seasons in which bad teams get first dibs on the top amateur players, there’s a salary cap, free agency, etc. Many of these rules are meant to promote parity among teams, preventing a situation in which one group of teams are going to the finals, while another group are languishing at the bottom of the ladder, year after year. Despite this, in talking to footy fans, I get the sense that some teams get a reputation for being perennial winners or losers, and that these perceptions are slow to change. This has the potential to influence how oddsmakers treat different teams, basing predictions on reputation more than actual performance.
 
-![Team win rate vs predicted win rate, sorted by difference between the two (predicted win rate — win rate)](https://cdn-images-1.medium.com/max/2000/1*s8soKsguwlClpAk3UTER1w.png)*Team win rate vs predicted win rate, sorted by difference between the two (predicted win rate — win rate)*
+![Team win rate vs predicted win rate, sorted by difference between the two (predicted win rate — win rate)](https://cdn-images-1.medium.com/max/2000/1*s8soKsguwlClpAk3UTER1w.png)_Team win rate vs predicted win rate, sorted by difference between the two (predicted win rate — win rate)_
 
 As represented by the percent difference between the win rate and predicted win rate, there does seem to be a tendency to over-favour teams with winning records (Hawthorn, Sydney) and under-favour teams with losing records (Brisbane, Gold Coast).
 

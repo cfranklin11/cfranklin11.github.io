@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Post.astro
 title: How to Set up FaunaDB for local development
 published: true
 description: FaunaDB is a serverless database with a GraphQL interface. Learn how to setup a local instance on your machine for development and testing.
@@ -110,56 +111,60 @@ To start, we will want to create some data that we will then be able to query. T
 
 ```graphql
 mutation createBob {
-  createUser(data: {
-    username: "burgerbob",
-    password: "password1234",
-    posts: {
-      create: [
-        {
-          title: "Burgers Are Great!",
-          text: "Burgers have meat, and bread, and..."
-        },
-        {
-          title: "Top 10 Burgers",
-          text: "1. Cheeseburger, 2. Hamburger..."
-        },
-      ]
+  createUser(
+    data: {
+      username: "burgerbob"
+      password: "password1234"
+      posts: {
+        create: [
+          {
+            title: "Burgers Are Great!"
+            text: "Burgers have meat, and bread, and..."
+          }
+          { title: "Top 10 Burgers", text: "1. Cheeseburger, 2. Hamburger..." }
+        ]
+      }
     }
-  }) {
+  ) {
     _id
     posts {
-      data { _id }
+      data {
+        _id
+      }
     }
   }
 }
 
 mutation createLinda {
-  createUser(data: {
-    username: "momsense",
-    password: "password1234",
-    posts: {
-      create: [
-        {
-          title: "Why Baked Ziti Is Overrated",
-          text: "Baked ziti is really not that great..."
-        },
-        {
-          title: "Top 10 Wines to Pair with Burgers",
-          text: "1. Pinot Noir, 2. Merlot..."
-        },
-      ]
+  createUser(
+    data: {
+      username: "momsense"
+      password: "password1234"
+      posts: {
+        create: [
+          {
+            title: "Why Baked Ziti Is Overrated"
+            text: "Baked ziti is really not that great..."
+          }
+          {
+            title: "Top 10 Wines to Pair with Burgers"
+            text: "1. Pinot Noir, 2. Merlot..."
+          }
+        ]
+      }
     }
-  }) {
+  ) {
     _id
     posts {
-      data { _id }
+      data {
+        _id
+      }
     }
   }
 }
 ```
 
 Now that we have some records in the database, we can query them with the built-in `find<Collection>ByID` query or fetch all of a collection's records with one of the `all<Collection>` queries that we included in the schema. If you're using Insomnia, explore the schema documentation and try out different queries.
-
 
 ## Bonus: Using FaunaDB while testing a Python application (with Pytest)
 

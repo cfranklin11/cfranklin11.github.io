@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Post.astro
 title: "Toward a Better Footy Tipping Model: The Folly of Memory"
 published: true
 excerpt: "I concluded the previous post with a promise to consider AFL match data as a series of events occurring in time, because that is what they are. Though aggregations can reveal patterns across non-temporal dimensions (e.g. home vs away, ladder position, team), they obscure the sport as participants and spectators experience it. In this post I will look at two competing forces in the realm of sports narratives: the long-term perceptions of individual team’s quality (are they good or bad?) and short-term perceptions of a team’s chances of winning their next match (are they hot or cold?)."
@@ -8,7 +9,7 @@ categories:
   - sportsball
 ---
 
-*The data and code used for this post is in the [Footy Tipper](https://github.com/cfranklin11/footy-tipper) GitHub repo (in the experiments folder). All data is from AFL matches from 2010 to 2017.*
+_The data and code used for this post is in the [Footy Tipper](https://github.com/cfranklin11/footy-tipper) GitHub repo (in the experiments folder). All data is from AFL matches from 2010 to 2017._
 
 I concluded the previous post with a promise to consider AFL match data as a series of events occurring in time, because that is what they are. Though aggregations can reveal patterns across non-temporal dimensions (e.g. home vs away, ladder position, team), they obscure the sport as participants and spectators experience it. In this post I will look at two competing forces in the realm of sports narratives: the long-term perceptions of individual team’s quality (are they good or bad?) and short-term perceptions of a team’s chances of winning their next match (are they hot or cold?).
 
@@ -50,11 +51,12 @@ Or maybe not. In Past Craig’s defence, there is a slight bump toward the extre
 
 Teams that regularly win are, of course, more likely to win in any given week, but even consistent losers get lucky and snag a win now and again, which can muddle these single-round win rate trends. What about winning streaks, though? The bottom of the ladder can win a few over the course of a season, but surely they’re not about to win a few in a row on their way to losing the rest through September. So, how predictive of future wins are hot andcold streaks?
 
-![Note: 0 win streak win rate is not 50% due to draws being counted as wins, because in tipping they are](https://cdn-images-1.medium.com/max/2268/1*_LpBW9doihfNUjZ1pwL7fQ.png)*Note: 0 win streak win rate is not 50% due to draws being counted as wins, because in tipping they are*
+![Note: 0 win streak win rate is not 50% due to draws being counted as wins, because in tipping they are](https://cdn-images-1.medium.com/max/2268/1*_LpBW9doihfNUjZ1pwL7fQ.png)_Note: 0 win streak win rate is not 50% due to draws being counted as wins, because in tipping they are_
 
 It looks like winning teams are actually less likely to win — and losing teams less likely to lose — follow-up matches than they are to win or lose any given match selected at random. Again, good teams win more often than they lose, whether they’re on a hot streak or not, but they are actually less likely to win the next match after a streak of any length than they are to win in general. Given the prevalence of [recency bias](http://www.wikinvest.com/wiki/Recency_bias), it’s understandable that people have an intuitive sense of hot and cold teams having an above- or below-average win rate, ignoring their even-more-extreme overall win rate, which makes fans over-inflate or over-deflate the expected probability of a future win.
 
 I recently found an example of this when I, anxious about how the upcoming round would affect my performance in the office footy tipping competition, read a [preview](http://www.sportingnews.com/au/afl/news/melbourne-demons-v-sydney-swans-full-preview-teams-odds-and-how-to-watch-sundays-afl-action-buddy-franklin/ijv38q458d5u1pmuyl51py6fv) of the upcoming Melbourne-Sydney match, the first two lines of which are literally as follows:
+
 > Melbourne has won four of it’s last five games but dropped three in a row before that.
 > Sydney is back in winning form after losing four of the previous five.
 
@@ -62,7 +64,7 @@ Forgetting for a moment the arbitrary framing of these figures in the pursuit of
 
 The table below gives us an idea of how biased those expectations are by comparing the real win rates to those predicted by betting odds.
 
-![Note: 0 win streak win rate is not 50% due to draws being counted as wins, because in tipping they are](https://cdn-images-1.medium.com/max/2000/1*jvHPw6x7jnVOG7YUQ9Y4qQ.png)*Note: 0 win streak win rate is not 50% due to draws being counted as wins, because in tipping they are*
+![Note: 0 win streak win rate is not 50% due to draws being counted as wins, because in tipping they are](https://cdn-images-1.medium.com/max/2000/1*jvHPw6x7jnVOG7YUQ9Y4qQ.png)_Note: 0 win streak win rate is not 50% due to draws being counted as wins, because in tipping they are_
 
 As we saw with other forms of conventional wisdom, the belief that a team that has won or lost recently is just going to keep on winning or losing is contradicted by the data. Betting odds are the chump who buys a stock that’s been rapidly increasing in value for weeks (because of course it’s going to keep going up forever) only to have that same hot stock crash the next day. Past results are not indicative of future returns, my friend. Despite this bias in favour of hot teams and against cold teams, the accuracy of betting odds — in line with earlier analysis — remains pretty consistent across all winning/losing streak lengths (about 70% to 73%, close to the overall accuracy of 72.3%). At this point, however, I’m less interested in finding specific situations in which betting odds are inaccurate, which is never the case when only considering one or two dimensions, but biases that can be exploited by an ML model that can learn under which combination of factors a betting-odds underdog may be more likely to win.
 
