@@ -5,6 +5,19 @@ const { frontmatter } = Astro.props;
 ---
 
 <Base title={frontmatter.title}>
-  <h1>{frontmatter.title}</h1>
-  <slot />
+  <style>
+    article {
+      max-width: 50rem;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+  <div class="container">
+    <article>
+      <slot />
+    </article>
+  </div>
 </Base>

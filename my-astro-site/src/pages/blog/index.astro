@@ -5,15 +5,34 @@ const posts = await Astro.glob("./*.md");
 ---
 
 <Base title="Blog">
-  <h1>Blog</h1>
-  <ul>
-    {
-      posts.reverse().map((post) => (
-        <li>
-          <a href={post.url}>{post.frontmatter.title}</a>
-          <p>{post.frontmatter.excerpt || post.frontmatter.description}</p>
-        </li>
-      ))
+  <style>
+    ul {
+      max-width: 56rem;
+      list-style: none;
     }
-  </ul>
+
+    li {
+      border: 1px solid black;
+      margin: 1rem;
+      border-radius: 1rem;
+      padding: 1rem;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+  <div class="container">
+    <ul>
+      {
+        posts.reverse().map((post) => (
+          <li>
+            <a href={post.url}>{post.frontmatter.title}</a>
+            <p>{post.frontmatter.excerpt || post.frontmatter.description}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
 </Base>
