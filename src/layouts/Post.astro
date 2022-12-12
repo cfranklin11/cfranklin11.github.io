@@ -1,0 +1,23 @@
+---
+import Base from "./Base.astro";
+
+const { frontmatter } = Astro.props;
+---
+
+<Base title={frontmatter.title}>
+  <style>
+    article {
+      max-width: 50rem;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+  <div class="container">
+    <article>
+      <slot />
+    </article>
+  </div>
+</Base>
