@@ -1,7 +1,18 @@
 ---
+import type { MarkdownInstance } from "astro";
 import Base from "../../layouts/Base.astro";
 
-const posts = await Astro.glob("./*.md");
+interface PostFrontmatter {
+  title: string;
+  excerpt?: string;
+  description?: string;
+}
+
+const posts = Object.entries(
+  import.meta.glob<MarkdownInstance<PostFrontmatter>>("./*.md", { eager: true })
+)
+  .sort(([pathA], [pathB]) => pathA.localeCompare(pathB))
+  .map(([, post]) => post);
 ---
 
 <Base title="Blog">
